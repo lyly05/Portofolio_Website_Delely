@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Portfolio Website</title>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+          <br>
+      </div>
+    <header class="header">
+      <a href="#home" class="logo">
+        <span class="white-text">Lovely.</span><span class="gradient-text">ly</span>
+      </a>
+      <i
+        class="bx bx-menu"
+        id="menu-icon"
+      ></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact">
+        <button class="gradient-btn">Contact Me</button>
+      </a>
+
+      
+    </header>
+
+    <section
+      class="home"
+      id="home"
+    >
+      <div class="home-content">
+        <h1>Hi, I'm <span class="gradient-text">Delely Rahmawati Hidayah</span></h1>
+        <h3 class="el">I'm a Frontend Enthusiast</h3>
+        <p>Let's Get To Know About Me!</p>
+
+        <div class="social-icons">
+          <a href="https://github.com/lyly05">
+            <i class="bx bxl-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/delely-rahmawati-hidayah-529b46308/">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+
+          <a href="https://www.instagram.com/delelyrh/?utm_source=ig_web_button_share_sheet" 
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+        </div>
+        <div class="btn-group">
+          <a  href="https://wa.me/087845677461" class="btn">Private Massage</a>
+
+          <a  href="DelelyRahmawatiHidayah.pdf" class="btn">CV</a
+          >
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img
+          src="FFFf.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section
+      class="about"
+      id="about"
+    >
+      <div class="about-img">
+        <img
+          src="FFFf.jpg"
+          alt=""
+        />
+      </div><br><br><br>
+
+      <div class="about-content" id="about-content"> <!-- Tambahkan ID di sini -->
+        <h2>About<span class="gradient-text">Me</span></h2>
+        <p>
+            I am an Informatics student at Siliwangi University who has a great interest in web development and artificial intelligence. I love building efficient digital solutions, from interactive web applications to AI models that can make
+            everyday life easier. Currently, I am actively developing projects using technologies such as JavaScript, React, Node.js, and Python. Apart from that, I also have experience in UI/UX design and working with databases such as MySQL
+            and MongoDB. I am always enthusiastic about learning new things and collaborating with great people in the technology industry.
+        </p>
+        <br /><br /><br />
+        <a href="#" class="btn" id="readMoreBtn">Read More</a>
+
+<!-- Modal Structure -->
+<div id="myModal" class="modal">
+  <div class="modal-content" id="modal-content">
+    <span class="close">&times;</span>
+    <h2>Why Hire<span class="gradient-text">Me?</span></h2>
+    
+    <div class="image-container">
+      <div class="image-item">
+        <img src="FOTO1.jpg" alt="Left Image" class="small-image">
+        <h3>Communicative</h3>
+        <p>I communicate what I struggle to make all crystal clear. I can communicate my ideas well.</p>
+      </div>
+      
+      <div class="image-item">
+        <img src="FOTO2.jpg" alt="Main Image" class="small-image">
+        <h3>Collaborative</h3>
+        <p>I can work within a team, collaborate well with developers because I’m frontend-end myself, and I love feedbacks.</p>
+      </div>
+      
+      <div class="image-item">
+        <img src="FOTO3.jpg" alt="Right Image" class="small-image">
+        <h3>High Initiative</h3>
+        <p>With high initiative, I can adapt quickly, find innovative solutions, and have a positive impact on teams and projects.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("readMoreBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.addEventListener('click', function(event) {
+        event.preventDefault();
+        modal.style.display = "block";
+    });
+
+    
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+    </section>
+    
+    <div class="skill" id="skill">
+      <h1>My Skills</h1>
+
+      <li><h3>HTML</h3>
+        <span class="bar"><span class="html"></span></span>
+      </li>
+
+      <li><h3>CSS</h3>
+        <span class="bar"><span class="css"></span></span>
+      </li>
+
+      <li><h3>Javascript</h3>
+        <span class="bar"><span class="javascript"></span></span>
+      </li>
+
+      <li><h3>Python</h3>
+        <span class="bar"><span class="python"></span></span>
+      </li>
+      <div class="tools"> 
+        <h3>Tools I Use</h3>
+        <img src="vscode.png" alt="Visual Studio Code Logo" />
+        <img src="figma.png" alt="Figma Logo" />
+        <img src="netbeans.png" alt="NetBeans Logo" />
+        <img src="mysql.png" alt="MySQL Logo" />
+        <img src="canva.png" alt="Canva Logo" />
+    </div>
+    </div>
+
+    <section
+      class="projects"
+      id="projects"
+    >
+    <h2 class="heading">
+      <span class="gradient-text">Projects</span>
+    </h2>
+    <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    
+    <div class="projects-box">
+      <div class="project-card">
+        <img src="project2.png" alt="" />
+        <h3>Project 1: Redesign Website Lazatto Chicken and Burger</h3>
+        <p>This project is a UI/UX redesign for Lazatto Chicken and Burger, a growing food brand specializing in fried chicken, burgers, and other fast food items. The redesign enhances the brand’s digital presence with a modern, user-friendly interface.</p>
+        <a href="https://www.figma.com/proto/f4YopgY9vo0jKzSpcv4DUt/Redesign-Website-Lazatto?node-id=29-3&p=f&t=hsshDn5DuBAprjVD-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=29%3A3&show-proto-sidebar=1" target="_blank" style="text-decoration: none;">
+          <<button class="project-button">
+            View Project
+        </button>
+        </a>
+      </div>
+
+      <style>
+        .project-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .project-button:hover {
+            background-color: #0056b3; 
+            transform: scale(1.05); 
+        }
+    </style>
+      
+    
+      <div class="project-card">
+        <img src="project3.png" alt="" />
+        <h3>Project 2: Reviva Platform Managing Used Oil Waste</h3>
+        <p>Reviva is an innovative platform that focuses on managing used oil waste by converting it into floor cleaner. This initiative aims to create a cleaner and more sustainable environment, especially in Singabarong Village.</p>
+        <a href="https://feb027.github.io/reviva/index.html" target="_blank" style="text-decoration: none;">
+          <button class="project-button">
+            View Project
+        </button>
+        </a>
+      </div>
+
+      <style>
+        .project-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .project-button:hover {
+            background-color: #0056b3; 
+            transform: scale(1.05); 
+        }
+    </style>
+    
+      <div class="project-card">
+        <img src="project4.png" alt="" />
+        <h3>Project 3: E-Commerce Web Flower Shop</h3>
+        <p>Delysa Florist is an e-commerce platform designed to sell various types of flowers, both real and artificial. With an eye-catching design and intuitive user experience, Delysa Florist brings convenience to buying flowers for various occasions!</p>
+        <a href="https://www.figma.com/proto/QPU8Xgp2IBlygMtEKwxMzK/Prototyping?node-id=141-6701&p=f&t=Zne75Qis7ME6ylZL-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=141%3A6701&show-proto-sidebar=1" target="_blank" style="text-decoration: none;">
+          <button class="project-button">
+            View Project
+        </button>
+        </a>
+      </div>
+
+      <style>
+        .project-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .project-button:hover {
+            background-color: #0056b3; 
+            transform: scale(1.05); 
+        }
+    </style>
+    
+      <div class="project-card">
+        <img src="project5.png" alt="" />
+        <h3>Project 4: Calestial.GG, Digital Game Marketplace</h3>
+        <p>Calestial.GG is a digital platform for buying, selling and managing your collection of favorite games. With a modern interface and smooth user experience, this platform is the best place for gamers to discover the latest games and get attractive discounts.</p>
+        <a href="https://www.figma.com/proto/ayyOO0YkjaDWtMLYNUBCXw/Untitled?node-id=12-530&p=f&t=J28vHEL2yL1AJVhK-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" style="text-decoration: none;">
+            <button class="project-button">
+                View Project
+            </button>
+        </a>
+    </div>
+
+    <style>
+        .project-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .project-button:hover {
+            background-color: #0056b3; 
+            transform: scale(1.05); 
+        }
+    </style>
+    
+      <div class="project-card">
+        <img src="project6.png" alt="" />
+        <h3>Project 5: Makeup Services Marketplace</h3>
+        <p>Makeling Beauty is a digital platform that brings together customers with professional Makeup Artists in various locations. With easy search and ordering features, users can find makeup services according to their needs, both for special and everyday events.</p>
+        <a href="https://www.figma.com/proto/UNhjdsqxs08vvOFToFKs3I/coba?node-id=88-4&p=f&t=5nY2HpKnkwLcssW1-0&scaling=scale-down&content-scaling=fixed&page-id=44%3A13&starting-point-node-id=88%3A4" target="_blank" style="text-decoration: none;">
+          <button class="project-button">
+            View Project
+        </button>
+        </a>
+      </div>
+
+      <style>
+        .project-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .project-button:hover {
+            background-color: #0056b3; 
+            transform: scale(1.05); 
+        }
+    </style>
+    
+      <div class="project-card">
+        <img src="project1.png"" />
+        <h3>Project 6: Sequence Calculator</h3>
+        <p>Sequence Calculator is a web-based application designed to assist users in calculating various types of mathematical sequences and series. This app provides an engaging experience in learning and solving math problems.</p>
+        <a href="https://rovifauzan.github.io/Website-Deret/" target="_blank" style="text-decoration: none;">
+          <button class="project-button">
+            View Project
+        </button>
+        </a>
+      </div>
+
+      <style>
+        .project-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+    
+        .project-button:hover {
+            background-color: #0056b3; 
+            transform: scale(1.05); 
+        }
+    </style>
+
+    </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="heading">
+            <span class="white-text">Our Clients</span><span class="gradient-text">Reviews</span>
+        </h1>
+        </div>
+        <div class="testimonials-content">
+          <div class="swiper testimonials-slider js-testimonials-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="WhatsApp Image 2024-12-14 at 09.15.22_80ad537c.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Sandul El Ciboy</h3>
+                    <span class="job">Startup Founder</span>
+                  </div>
+                </div>
+                <p>"Amazing! The developed application is very intuitive and responsive. From design to functionality, everything went smoothly. The communication process was also very professional and responsive. I highly recommend!"</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="WhatsApp Image 2024-12-14 at 09.15.22_80ad537c.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Jeon Jungkookie</h3>
+                    <span class="job">Frontend Developer</span>
+                  </div>
+                </div>
+                <p>"Very satisfying work results! The system built not only meets our business needs, but also improves work efficiency significantly. Thank you for your dedication!"</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="WhatsApp Image 2024-12-14 at 09.15.22_80ad537c.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Kim Mingyu</h3>
+                    <span class="job">UI/UX Designer</span>
+                  </div>
+                </div>
+                <p>It was a pleasure working together on this project! The team truly understands user needs and delivers solutions that are elegant and easy to use. Will work together again in the future!"</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="WhatsApp Image 2024-12-14 at 09.15.22_80ad537c.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Cha Eunwoo</h3>
+                    <span class="job">Software Engineer</span>
+                  </div>
+                </div>
+                <p>What an amazing experience! The applications created not only meet expectations, but also provide innovative solutions that make our work easier. Highly recommended!"</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="WhatsApp Image 2024-12-14 at 09.15.22_80ad537c.jpg" alt="img">
+                  <div class="text-box">
+                    <h3 class="name">Muhammad Ikhsan Fauzi</h3>
+                    <span class="job">IT Student</span>
+                  </div>
+                </div>
+                <p>Clean and efficient code quality! This project was very well done, with clear communication and fast execution. It was a pleasure to collaborate!</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js-testimonials-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container1">
+      <div class="container__left">
+        <h1>Read what my customers love about me</h1>
+        <p>
+          I've collaborated with over 10 people to create seamless and visually stunning digital experiences. 
+        <p>
+          My expertise in frontend development and UI/UX design has helped businesses increase user engagement, improve accessibility, and drive significant growth.
+        </p>
+      </div>
+      <div class="container__right">
+        <div class="card">
+          <img src="WhatsApp Image 2024-12-14 at 09.15.22_80ad537c.jpg" alt="user" />
+          <div class="card__content">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <div class="card__details">
+              <p>
+                This project is truly impressive! From start to finish, everything went smoothly and the end result exceeded expectations.
+              </p>
+              <h4>- Kai Kamal Heuning</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="WhatsApp Image 2024-12-14 at 09.15.22_80ad537c.jpg" alt="user" />
+          <div class="card__content">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <div class="card__details">
+              <p>
+                Very satisfied with the quality of work provided. The details were well attended to, and the end result was very professional.
+              </p>
+              <h4>- Lee Know</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="WhatsApp Image 2024-12-14 at 09.15.22_80ad537c.jpg" alt="user" />
+          <div class="card__content">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <div class="card__details">
+              <p>
+                From design to performance, everything is perfect! Highly recommended for anyone looking for a reliable digital solution.
+              </p>
+              <h4>- Keira Lyliana F</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="contact" id="contact">
+      <h1 class="heading">
+          <span class="white-text">Contact</span><span class="gradient-text">Me</span>
+      </h1>
+  
+      <div class="row">
+          <div class="image">
+              <img src="image/contact-img.svg" alt="">
+          </div>
+  
+          <form action="https://api.web3forms.com/submit" method="POST">
+              <span>Name</span>
+              <input type="text" required placeholder="Input your name" maxlength="50" name="your-name" class="box">
+              <span>Email</span>
+              <input type="email" required placeholder="Input your email" maxlength="50" name="your-email" class="box">
+              <span>Message</span>
+              <input type="text" required placeholder="Your Message" maxlength="500" name="your-message" class="box">
+              <span>Course</span>
+              <select name="course" class="box" required>
+                  <option value="" disabled selected>Select Course</option>
+                  <option value="General">General</option>
+                  <option value="Student">Student</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Worker">Worker</option>
+                  <option value="Other">Other</option>
+              </select>
+              <span>Select Gender</span>
+              <div class="radio">
+                  <input type="hidden" name="access_key" value="a0f54613-1e35-4d01-a2cc-6d6615454a4d">
+                  <input type="radio" name="Gender" value="Laki-laki" id="Laki-laki">
+                  <label for="Laki-laki">Man</label>
+                  <input type="radio" name="Gender" value="Perempuan" id="Perempuan">
+                  <label for="Perempuan">Woman</label>
+              </div><br><br><br><br><br>
+              <input type="submit" value="SUBMIT" class="btn" name="terkirim">
+          </form>
+      </div>
+  </section>
+
+  <footer class="footer">
+    <section>
+        <div class="share">
+            <h3>MY SOCIAL MEDIA</h3>
+            <a href="https://www.facebook.com/ikhsa.ikhsa.50767" class="bx bxl-facebook"></a>
+            <a href="https://x.com/univ_siliwangi?t=M_zpElEh_1qxA0MoGcEPpA&s=09" class="bx bxl-twitter"></a>
+            <a href="https://www.instagram.com/delelyrh/?utm_source=ig_web_button_share_sheet" class="bx bxl-instagram-alt"></a>
+            <a href="https://www.youtube.com/@thearchonelectrotkyo9189" class="bx bxl-youtube"></a>
+        </div>
+        <div class="credit">&copy; copyright 2024 by <span>Lovely.ly</span> | all rights reserved!</div>
+    </section>
+</footer>
+
+</footer>
+  </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.js-testimonials-slider', {
+        grabCursor: true,
+        spaceBetween: 30,
+        pagination:{
+          el: '.js-testimonials-pagination',
+          clickable: true
+        },
+        breakpoints: {
+          767:{
+            slidesPerview: 2
+          }
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      var typed=new Typed(".el",{
+        strings:["I'm a Frontend Enthusiast", "UI/UX Designer", "Web Developer"],
+        typedSpeed:100,
+        backSpeed:100,
+        loop:true
+      });
+    </script>
+  </body>
+</html>
